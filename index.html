@@ -1,507 +1,550 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>SunShield - Kem chống nắng không bết dính | SPF50+ PA++++</title>
-    <!-- Google Fonts & Font Awesome -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Chúc em Ngọc Tuyền thi tốt cuối cấp 12 ❤️</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #fff9f5;
-            color: #1e1e2a;
-            line-height: 1.5;
-            scroll-behavior: smooth;
-        }
+    body {
+      min-height: 100vh;
+      background: linear-gradient(145deg, #f9e7b3 0%, #f5b190 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Segoe UI', 'Quicksand', system-ui, -apple-system, 'Poppins', 'Dancing Script', cursive, sans-serif;
+      padding: 20px;
+      position: relative;
+    }
 
-        .container {
-            max-width: 1280px;
-            margin: 0 auto;
-            padding: 0 24px;
-        }
+    /* Nền hoa lá nhẹ trang trí */
+    body::before {
+      content: "🌸🍀⭐📖✨";
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      font-size: 42px;
+      opacity: 0.2;
+      white-space: pre;
+      pointer-events: none;
+      transform: rotate(-10deg);
+    }
 
-        /* Buttons */
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            padding: 14px 28px;
-            border-radius: 48px;
-            font-weight: 600;
-            font-size: 1rem;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            cursor: pointer;
-            border: none;
-        }
+    body::after {
+      content: "✏️📚🍃💪🎓";
+      position: absolute;
+      bottom: 30px;
+      right: 25px;
+      font-size: 56px;
+      opacity: 0.2;
+      pointer-events: none;
+      transform: rotate(5deg);
+    }
 
-        .btn-primary {
-            background: #f97316;
-            color: white;
-            box-shadow: 0 8px 20px rgba(249, 115, 22, 0.3);
-        }
+    /* thiệp chính */
+    .card {
+      max-width: 700px;
+      width: 100%;
+      background: #fffef7;
+      border-radius: 55px 35px 65px 45px;
+      box-shadow: 0 30px 40px rgba(0, 0, 0, 0.2), 0 10px 20px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      backdrop-filter: blur(0px);
+      position: relative;
+      z-index: 2;
+      border: 1px solid rgba(255, 215, 150, 0.8);
+    }
 
-        .btn-primary:hover {
-            background: #ea580c;
-            transform: translateY(-2px);
-            box-shadow: 0 12px 24px rgba(249, 115, 22, 0.4);
-        }
+    .card:hover {
+      transform: scale(1.01);
+    }
 
-        .btn-outline {
-            background: transparent;
-            border: 2px solid #f97316;
-            color: #f97316;
-        }
+    /* phần đầu thiệp – banner chúc */
+    .hero {
+      background: linear-gradient(135deg, #ffd89b, #c7e9fb);
+      padding: 2rem 1.5rem 1.8rem;
+      text-align: center;
+      border-bottom: 5px dashed #ffb347;
+    }
 
-        .btn-outline:hover {
-            background: #f97316;
-            color: white;
-        }
+    .hero h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: #c4450c;
+      text-shadow: 2px 2px 0 #ffeaaf;
+      letter-spacing: 2px;
+      word-break: keep-all;
+    }
 
-        /* Header */
-        .header {
-            background: white;
-            box-shadow: 0 2px 20px rgba(0,0,0,0.03);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            backdrop-filter: blur(8px);
-            background: rgba(255,255,255,0.92);
-        }
+    .hero .greeting-name {
+      font-size: 2rem;
+      margin: 12px 0 5px;
+      background: #fffbee;
+      display: inline-block;
+      padding: 0.2rem 1.2rem;
+      border-radius: 60px;
+      color: #b64926;
+      font-weight: bold;
+      box-shadow: inset 0 0 0 1px #ffe5aa, 0 6px 12px rgba(0,0,0,0.05);
+    }
 
-        .header .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 16px 24px;
-        }
+    .hero .sub {
+      font-size: 1.2rem;
+      margin-top: 12px;
+      font-weight: 600;
+      color: #964b1e;
+      background: rgba(255,250,210,0.7);
+      display: inline-block;
+      padding: 5px 18px;
+      border-radius: 30px;
+      backdrop-filter: blur(2px);
+    }
 
-        .logo {
-            font-size: 1.8rem;
-            font-weight: 800;
-            color: #f97316;
-            letter-spacing: -0.5px;
-        }
+    /* Nội dung chính */
+    .content {
+      padding: 2rem 2rem 1.5rem;
+    }
 
-        .logo span {
-            color: #1e1e2a;
-        }
+    .message {
+      background: #fffaf2;
+      border-radius: 48px;
+      padding: 1.5rem;
+      box-shadow: inset 0 0 0 1px #fff0cf, 0 12px 18px -12px rgba(0,0,0,0.1);
+    }
 
-        /* Hero */
-        .hero {
-            padding: 60px 0 40px;
-        }
+    .quote {
+      font-size: 1.35rem;
+      font-style: italic;
+      font-weight: 500;
+      color: #7c4a2b;
+      border-left: 5px solid #ffb347;
+      padding-left: 20px;
+      margin-bottom: 1.5rem;
+      line-height: 1.4;
+      font-family: 'Segoe UI', 'Quicksand', cursive;
+    }
 
-        .hero-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 48px;
-            align-items: center;
-        }
+    .wishes-list {
+      margin: 1.7rem 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+    }
 
-        .hero-title {
-            font-size: 3rem;
-            font-weight: 800;
-            line-height: 1.2;
-            margin-bottom: 20px;
-        }
+    .wish-chip {
+      background: linear-gradient(110deg, #fceabb, #f8b500);
+      padding: 10px 20px;
+      border-radius: 40px;
+      font-weight: 600;
+      color: #2c1a0c;
+      font-size: 0.95rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
 
-        .hero-title span {
-            color: #f97316;
-            border-bottom: 3px solid #f97316;
-        }
+    .wish-chip span {
+      font-size: 1.2rem;
+    }
 
-        .hero-desc {
-            font-size: 1.1rem;
-            color: #4b5563;
-            margin-bottom: 28px;
-        }
+    .poem {
+      background: #fff3e0;
+      border-radius: 32px;
+      padding: 1.2rem;
+      margin: 1.5rem 0;
+      text-align: center;
+      line-height: 1.6;
+      color: #a1532a;
+      font-weight: 500;
+    }
 
-        .hero-badge {
-            display: inline-block;
-            background: #fff0e6;
-            color: #f97316;
-            padding: 6px 14px;
-            border-radius: 40px;
-            font-size: 0.85rem;
-            font-weight: 600;
-            margin-bottom: 20px;
-        }
+    .poem p {
+      margin: 6px 0;
+    }
 
-        .hero-stats {
-            display: flex;
-            gap: 24px;
-            margin-top: 32px;
-        }
+    .signature {
+      margin-top: 20px;
+      text-align: right;
+      font-family: 'Dancing Script', cursive;
+      font-size: 1.7rem;
+      font-weight: bold;
+      color: #d96c1f;
+      border-top: 2px dotted #ffe0b5;
+      padding-top: 18px;
+    }
 
-        .stat {
-            font-weight: 700;
-            font-size: 1.2rem;
-        }
+    /* lời khuyên + động lực */
+    .encourage-block {
+      background: #eef7fa;
+      border-radius: 35px;
+      margin-top: 1.5rem;
+      padding: 1.2rem 1.5rem;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: space-between;
+    }
 
-        .stat small {
-            font-weight: 400;
-            font-size: 0.85rem;
-            color: #6b7280;
-        }
+    .encourage-text {
+      font-weight: 600;
+      color: #1f6392;
+      font-size: 1rem;
+      flex: 2;
+    }
 
-        /* Video wrapper */
-        .video-wrapper {
-            background: #f1f5f9;
-            border-radius: 32px;
-            overflow: hidden;
-            box-shadow: 0 20px 35px -12px rgba(0,0,0,0.15);
-            aspect-ratio: 16 / 9;
-            position: relative;
-        }
+    .btn-flower {
+      background-color: #ffb882;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 50px;
+      font-weight: bold;
+      font-size: 0.9rem;
+      color: white;
+      cursor: pointer;
+      transition: 0.2s;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
 
-        .video-wrapper iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
+    .btn-flower:hover {
+      background-color: #ff9f4a;
+      transform: scale(0.97);
+    }
 
-        /* Section chung */
-        .section {
-            padding: 70px 0;
-        }
+    /* confetti canvas */
+    #confetti-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 999;
+    }
 
-        .section-title {
-            font-size: 2.2rem;
-            font-weight: 700;
-            text-align: center;
-            margin-bottom: 48px;
-        }
+    /* responsive */
+    @media (max-width: 550px) {
+      .hero h1 {
+        font-size: 1.8rem;
+      }
+      .hero .greeting-name {
+        font-size: 1.5rem;
+      }
+      .quote {
+        font-size: 1.1rem;
+      }
+      .content {
+        padding: 1.5rem;
+      }
+      .wish-chip {
+        font-size: 0.8rem;
+        padding: 6px 14px;
+      }
+      .signature {
+        font-size: 1.3rem;
+      }
+    }
 
-        .section-title:after {
-            content: '';
-            width: 70px;
-            height: 4px;
-            background: #f97316;
-            display: block;
-            margin: 16px auto 0;
-            border-radius: 4px;
-        }
+    @media (max-width: 420px) {
+      .encourage-block {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
 
-        /* Features */
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 32px;
-        }
+    .heart-beat {
+      animation: gentleBeat 1.4s infinite ease-in-out;
+      display: inline-block;
+    }
 
-        .feature-card {
-            background: white;
-            padding: 28px 20px;
-            border-radius: 28px;
-            text-align: center;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.03);
-            transition: all 0.25s;
-            border: 1px solid #ffe8dc;
-        }
-
-        .feature-card i {
-            font-size: 2.5rem;
-            color: #f97316;
-            margin-bottom: 16px;
-        }
-
-        .feature-card h3 {
-            font-size: 1.3rem;
-            margin-bottom: 12px;
-        }
-
-        /* Video test section */
-        .testimonial-video {
-            background: linear-gradient(135deg, #fff4ed 0%, #fff9f5 100%);
-            border-radius: 48px;
-            padding: 48px 32px;
-        }
-
-        .tiktok-embed-place {
-            display: flex;
-            justify-content: center;
-            gap: 24px;
-            flex-wrap: wrap;
-            margin: 32px 0 0;
-        }
-
-        .tiktok-card {
-            background: white;
-            border-radius: 28px;
-            overflow: hidden;
-            width: 260px;
-            box-shadow: 0 15px 30px rgba(0,0,0,0.05);
-            transition: transform 0.2s;
-            text-decoration: none;
-            color: #1e1e2a;
-        }
-
-        .tiktok-card:hover {
-            transform: translateY(-6px);
-        }
-
-        .tiktok-img {
-            background: #161616;
-            aspect-ratio: 9 / 16;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 3rem;
-        }
-
-        .tiktok-info {
-            padding: 16px;
-        }
-
-        .tiktok-info p {
-            font-size: 0.85rem;
-            font-weight: 500;
-        }
-
-        /* CTA form */
-        .cta-form {
-            background: #1e1e2a;
-            color: white;
-            border-radius: 48px;
-            padding: 56px 40px;
-            text-align: center;
-        }
-
-        .form-group {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 12px;
-            margin-top: 28px;
-        }
-
-        .form-group input {
-            padding: 14px 20px;
-            border-radius: 60px;
-            border: none;
-            width: 280px;
-            font-size: 1rem;
-        }
-
-        /* Footer */
-        .footer {
-            background: #fff0e6;
-            padding: 40px 0;
-            text-align: center;
-            font-size: 0.85rem;
-        }
-
-        /* Mobile */
-        @media (max-width: 800px) {
-            .hero-grid {
-                grid-template-columns: 1fr;
-                text-align: center;
-            }
-            .hero-stats {
-                justify-content: center;
-            }
-            .hero-title {
-                font-size: 2.3rem;
-            }
-            .section-title {
-                font-size: 1.8rem;
-            }
-        }
-
-        .price {
-            font-size: 1.9rem;
-            font-weight: 800;
-            color: #f97316;
-        }
-
-        .old-price {
-            text-decoration: line-through;
-            color: #9ca3af;
-            font-size: 1rem;
-            margin-left: 8px;
-        }
-    </style>
+    @keyframes gentleBeat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.1); text-shadow: 0 0 3px #ffaa66; }
+    }
+  </style>
 </head>
 <body>
 
-<header class="header">
-    <div class="container">
-        <div class="logo">Sun<span>Shield</span></div>
-        <div>
-            <a href="#order" class="btn btn-primary" style="padding: 10px 22px;">Mua ngay <i class="fas fa-arrow-right"></i></a>
+<canvas id="confetti-canvas"></canvas>
+
+<div class="card">
+  <div class="hero">
+    <h1>🎓 CHÚC MỪNG CUỐI CẤP 3 🎓</h1>
+    <div class="greeting-name">💖 Ngọc Tuyền thân miến 💖</div>
+    <div class="sub">✨ SẮP BƯỚC VÀO KỲ THI TỐT NGHIỆP THPT ✨</div>
+  </div>
+
+  <div class="content">
+    <div class="message">
+      <div class="quote">
+        “Gửi e, chặng đường 12 năm đèn sách đã chuẩn bị cho em một hành trang vững vàng. 
+        Kỳ thi sắp tới chỉ là một bước ngoặt nhỏ trên con đường lớn phía trước. 
+        Hãy tự tin, bình tĩnh và làm bài thật tốt nhé!”
+      </div>
+
+      <div class="wishes-list">
+        <div class="wish-chip"><span>📖</span> Làm bài thật tỉnh táo</div>
+        <div class="wish-chip"><span>🍀</span> Gặp nhiều may mắn</div>
+        <div class="wish-chip"><span>💯</span> Điểm số như ý</div>
+        <div class="wish-chip"><span>🎯</span> Trúng nguyện vọng 1</div>
+        <div class="wish-chip"><span>🌟</span> tốt em </div>
+      </div>
+
+      <div class="poem">
+        <p>🌸🌸🌸</p>
+        <p><strong>Gửi Ngọc Tuyền</strong></p>
+        <p>“Sắp tới em bình tĩnh khi vào phòng thi,<br>
+        Mang hết tất cả những gì mình đã tiếp thu trong 12 năm.<br>
+        là thời khác quan trọng và quyết định cho ĐH,<br>
+        nguyện vong 1 hay 2 đều tốt đẹp nhất!”</p>
+        <p>🎵 Cố lên em nhé!anh và mọi người ủng hộ em. 🎵</p>
+      </div>
+
+      <div class="encourage-block">
+        <div class="encourage-text">
+           <strong>Lời nhắn động viên:</strong> “Hãy nhớ rằng, áp lực sẽ thành kim cương. 
+          Những ngày cuối hãy giữ sức khỏe, ngủ đủ giấc, ôn bài thông minh. 
+          Tin tưởng bản thân, em làm được! ❤️”
         </div>
+        <button class="btn-flower" id="popConfettiBtn">🌸 GỬI HOA MAY MẮN 🌸</button>
+      </div>
+
+      <div class="signature">
+        Chúc em thi thật tốt trong thời gian sắp tới — <span class="heart-beat">❤️</span> phn
+      </div>
     </div>
-</header>
+  </div>
+</div>
 
-<main>
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container hero-grid">
-            <div>
-                <div class="hero-badge"><i class="fas fa-check-circle"></i> #1 Kem chống nắng không bết dính 2025</div>
-                <h1 class="hero-title">Chống nắng <span>vật lý</span> SPF50+ PA++++<br> Không trắng bệt</h1>
-                <p class="hero-desc">Được yêu thích bởi 25.000+ làn da Việt. Bảo vệ toàn diện UVA/UVB, chống nước 80 phút, và đặc biệt <strong>không hề bết rít</strong> – cảm giác như không thoa gì.</p>
-                <div class="hero-stats">
-                    <div class="stat"> 4.9/5 <small>(2.300 đánh giá)</small></div>
-                    <div class="stat"> 500+ <small>video review thật</small></div>
-                </div>
-                <div style="margin-top: 32px; display: flex; gap: 16px; flex-wrap: wrap;">
-                    <a href="#video-test" class="btn btn-primary"><i class="fab fa-youtube"></i> Xem video test UV</a>
-                    <a href="#order" class="btn btn-outline"><i class="fas fa-shopping-cart"></i> Nhận ưu đãi 30%</a>
-                </div>
-            </div>
-            <div class="video-wrapper" id="video-test">
-                <iframe src="https://www.youtube.com/embed/2RomrVHQxcI?si=Axp0wFvqbDDagZds" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
-                <!-- Lưu ý: Thay link YouTube bằng video test UV thật của bạn. Video hiện tại là demo. -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Điểm nổi bật -->
-    <section class="section">
-        <div class="container">
-            <h2 class="section-title">Tại sao SunShield khác biệt?</h2>
-            <div class="features-grid">
-                <div class="feature-card"><i class="fas fa-sun"></i><h3>SPF50+ PA++++</h3><p>Chống tia UVA & UVB tới 98% ngăn nám, lão hóa</p></div>
-                <div class="feature-card"><i class="fas fa-water"></i><h3>Chống nước 80 phút</h3><p>Thoải mái đi biển, tập gym mà không lo trôi kem</p></div>
-                <div class="feature-card"><i class="fas fa-leaf"></i><h3>Lành tính cho da nhạy cảm</h3><p>Không Oxybenzone, không cồn, không hương liệu tổng hợp</p></div>
-                <div class="feature-card"><i class="fas fa-hand-peace"></i><h3>Texture siêu nhẹ</h3><p>Không bết dính, thẩm thấu nhanh chỉ 5 giây</p></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Video thử nghiệm trọng tâm + Review TikTok nhúng -->
-    <section class="section" style="padding-top: 0;">
-        <div class="container testimonial-video">
-            <div style="text-align: center;">
-                <h2 style="font-size: 1.8rem;"> Chứng minh bằng <span style="color:#f97316;">video thực tế</span></h2>
-                <p style="margin-bottom: 24px;">Xem hàng trăm review từ TikTok & cộng đồng dùng thật</p>
-            </div>
-            <!-- NHÚNG TRỰC TIẾP TIKTOK (dùng embed code) -->
-            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin: 20px 0;">
-                <!-- Block TikTok nhúng 1 - thay link bằng link video tiktok của sản phẩm -->
-                <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@htd_uong/video/7638279599629077768" data-video-id="7638279599629077768" style="max-width: 325px;min-width: 260px;"> 
-                    <section> 
-                        <a target="_blank" title="@htd_uong" href="https://www.tiktok.com/@htd_uong?refer=embed">@htd_uong</a> Kem chống nắng chân ái của tôi
-                        <a title="xh" target="_blank" href="https://www.tiktok.com/tag/xh?refer=embed">#xh</a> 
-                    </section> 
-                </blockquote>
-                <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@htd_uong/video/7638275772393983250" data-video-id="7638275772393983250" style="max-width: 325px;min-width: 260px;"> 
-                    <section> 
-                        <a target="_blank" title="@htd_uong" href="https://www.tiktok.com/@htd_uong?refer=embed">@htd_uong</a>
-                        <p>Mùa hè rất cần kem chống nắng các chị em nên dùng nhé</p> 
-                    </section> 
-                </blockquote>
-                <!-- Nút xem thêm -->
-            </div>
-            <div style="text-align: center; margin-top: 20px;">
-                <a href="https://www.tiktok.com/@sunshield" target="_blank" class="btn btn-outline"><i class="fab fa-tiktok"></i> Theo dõi TikTok SunShield</a>
-            </div>
-            <!-- Nhúng script của TikTok -->
-            <script async src="https://www.tiktok.com/embed.js"></script>
-            
-            <!-- Bổ sung link thủ công đề phòng -->
-            <div class="tiktok-embed-place">
-                <a href="https://www.tiktok.com/@htd_uong/video/7638271703587523847" target="_blank" class="tiktok-card">
-                    <div class="tiktok-img"><i class="fab fa-tiktok"></i></div>
-                    <div class="tiktok-info">
-                        <p>🌸 Kem chống nắng cho các chị em vào mùa hè</p>
-                        <small>@htd_uong | #xh</small>
-                    </div>
-                </a>  
-                <a href="https://www.tiktok.com/@htd_uong/video/7638277657200741639" target="_blank" class="tiktok-card">
-                    <div class="tiktok-img"><i class="fab fa-tiktok"></i></div>
-                    <div class="tiktok-info">
-                        <p>☀️ Kem chống nắng cho mùa hè rực rỡ</p>
-                        <small>@htd_uong | #xh #CapCut</small>
-                     </div>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- So sánh ngắn -->
-    <section class="section">
-        <div class="container">
-            <h2 class="section-title">Không còn lo bết dính</h2>
-            <div style="display: flex; flex-wrap: wrap; gap: 24px; justify-content: center;">
-                <div style="background:#fff0e6; border-radius: 36px; padding: 24px; flex:1; min-width: 200px; text-align: center;">
-                    <i class="fas fa-face-grin-tongue-squint" style="font-size: 3rem;"></i>
-                    <h3>Kem thường</h3>
-                    <p> Bết tóc, nhờn rít, khó chịu</p>
-                </div>
-                <div style="background:#f97316; color:white; border-radius: 36px; padding: 24px; flex:1; min-width: 200px; text-align: center;">
-                    <i class="fas fa-face-smile" style="font-size: 3rem;"></i>
-                    <h3>SunShield</h3>
-                    <p> Mỏng mượt, khô thoáng, không bết</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Form + CTA mua hàng (DEMO) -->
-    <section class="section" id="order">
-        <div class="container cta-form">
-            <h2 style="font-size: 2rem;">✨ Ưu đãi giới hạn hôm nay ✨</h2>
-            <p style="margin: 16px 0 8px;">Giá gốc: <span class="old-price">299.000đ</span> <span class="price">195.000đ</span> / tuýp 50ml</p>
-            <p> Mua 2 tặng 1 + Miễn phí ship toàn quốc</p>
-            <div class="form-group">
-                <input type="text" placeholder="Họ và tên" id="nameInput">
-                <input type="tel" placeholder="Số điện thoại" id="phoneInput">
-                <button class="btn btn-primary" onclick="alert('Cảm ơn bạn! Link thanh toán sẽ được gửi qua SMS/Zalo để demo (tích hợp giả).')"><i class="fab fa-facebook-messenger"></i> Đặt ngay - Nhận mã giảm</button>
-            </div>
-            <p style="font-size: 0.8rem; margin-top: 20px;">Cam kết hoàn tiền 100% nếu không hài lòng</p>
-        </div>
-    </section>
-
-    <!-- FAQ và liên kết TikTok chân trang -->
-    <section class="section" style="padding: 30px 0 20px;">
-        <div class="container" style="text-align: center;">
-            <h3>Theo dõi video thử nghiệm mới nhất</h3>
-            <div style="margin-top: 20px;">
-                <a href="https://www.tiktok.com/@sunshield" target="_blank" style="background: black; color: white; padding: 12px 28px; border-radius: 40px; display: inline-flex; align-items: center; gap: 10px; text-decoration: none; font-weight: bold;">
-                    <i class="fab fa-tiktok"></i> TikTok Official @sunshield
-                </a>
-                <a href="https://www.youtube.com/@sunshield" target="_blank" style="background: #ff0000; color: white; padding: 12px 28px; border-radius: 40px; display: inline-flex; align-items: center; gap: 10px; text-decoration: none; font-weight: bold; margin-left: 12px;">
-                    <i class="fab fa-youtube"></i> Xem test UV
-                </a>
-            </div>
-        </div>
-    </section>
-</main>
-
-<footer class="footer">
-    <div class="container">
-        <p>© 2025 SunShield - Kem chống nắng cho làn da Việt. Hình ảnh video minh họa có bản quyền.</p>
-        <p>Liên hệ: hotline 1900 9999 | Email: care@sunshield.vn</p>
-        <p style="margin-top: 12px;"><i class="fab fa-tiktok"></i> <i class="fab fa-youtube"></i> <i class="fab fa-facebook"></i> SunShield Official</p>
-    </div>
-</footer>
-
-<!-- Thêm một chút JS nếu cần -->
 <script>
-    // Chỉ demo tính năng cơ bản: khi bấm đặt hàng có thể lấy thông tin đơn giản
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            const href = this.getAttribute('href');
-            if(href === "#" || href === "") return;
-            if(href.startsWith("#")) {
-                e.preventDefault();
-                const target = document.querySelector(href);
-                if(target) target.scrollIntoView({ behavior: 'smooth' });
-            }
-        });
+  (function() {
+    // confetti cơ bản (không cần thư viện, tự vẽ canvas)
+    const canvas = document.getElementById('confetti-canvas');
+    let ctx = canvas.getContext('2d');
+    let animationId = null;
+    let particles = [];
+    let active = false;
+
+    function resizeCanvas() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+    window.addEventListener('resize', () => {
+      resizeCanvas();
+      if (!active) {
+        // clear nếu không active, chỉ resize background
+        if (ctx) ctx.clearRect(0, 0, canvas.width, canvas.height);
+      }
     });
+
+    function randomRange(min, max) {
+      return Math.random() * (max - min) + min;
+    }
+
+    class ConfettiParticle {
+      constructor(x, y) {
+        this.x = x;
+        this.y = y;
+        this.size = randomRange(5, 12);
+        this.speedX = randomRange(-2.5, 2.5);
+        this.speedY = randomRange(1.5, 4.2);
+        this.color = `hsl(${randomRange(20, 60)}, 70%, 55%)`; // cam vàng hồng
+        this.rotation = randomRange(0, 360);
+        this.rotateSpeed = randomRange(-6, 6);
+        this.gravity = 0.15;
+        this.fade = 1;
+        this.decay = 0.01 + Math.random() * 0.015;
+      }
+
+      update() {
+        this.speedY += this.gravity;
+        this.x += this.speedX;
+        this.y += this.speedY;
+        this.rotation += this.rotateSpeed;
+        this.fade -= this.decay;
+        return this.fade <= 0.02 || this.y > canvas.height + 100 || this.x < -100 || this.x > canvas.width + 100;
+      }
+
+      draw(ctx) {
+        ctx.save();
+        ctx.translate(this.x, this.y);
+        ctx.rotate(this.rotation * Math.PI / 180);
+        ctx.globalAlpha = this.fade;
+        ctx.fillStyle = this.color;
+        ctx.fillRect(-this.size/2, -this.size/3, this.size, this.size * 0.7);
+        ctx.restore();
+      }
+    }
+
+    function createConfettiWave(originX, originY) {
+      let particleCount = 150;
+      for (let i = 0; i < particleCount; i++) {
+        let angleSpread = randomRange(-0.6, 0.6);
+        let speed = randomRange(3, 7);
+        let dx = Math.sin(angleSpread) * speed * (Math.random() > 0.5 ? 1 : -1);
+        let dy = -Math.abs(Math.cos(angleSpread) * speed) - randomRange(1, 3);
+        let xOff = randomRange(-25, 25);
+        let yOff = randomRange(-15, 10);
+        let p = new ConfettiParticle(originX + xOff, originY + yOff);
+        p.speedX = dx + randomRange(-1, 1);
+        p.speedY = dy;
+        p.gravity = 0.18;
+        p.size = randomRange(5, 11);
+        p.color = `hsl(${randomRange(30, 70)}, 80%, 60%)`;
+        particles.push(p);
+      }
+    }
+
+    function animateConfetti() {
+      if (!active) return;
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      let anyAlive = false;
+      for (let i = 0; i < particles.length; i++) {
+        const dead = particles[i].update();
+        if (!dead) {
+          anyAlive = true;
+          particles[i].draw(ctx);
+        } else {
+          particles.splice(i,1);
+          i--;
+        }
+      }
+      if (anyAlive) {
+        animationId = requestAnimationFrame(animateConfetti);
+      } else {
+        // dừng hẳn
+        cancelAnimationFrame(animationId);
+        active = false;
+        animationId = null;
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+      }
+    }
+
+    function startConfettiFromCard() {
+      if (active) {
+        // nếu đang chạy thì dừng và reset để chạy đợt mới vui hơn
+        if (animationId) {
+          cancelAnimationFrame(animationId);
+          animationId = null;
+        }
+        particles = [];
+        active = false;
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+      }
+      active = true;
+      // lấy vị trí trung tâm card để bắn confetti
+      const cardElem = document.querySelector('.card');
+      const rect = cardElem.getBoundingClientRect();
+      const centerX = rect.left + rect.width / 2;
+      const centerY = rect.top + rect.height * 0.6;
+      // tạo 2 đợt bắn liên tiếp hiệu ứng pháo hoa giấy
+      createConfettiWave(centerX - 20, centerY);
+      createConfettiWave(centerX + 30, centerY - 15);
+      createConfettiWave(centerX, centerY + 10);
+      // thêm 50 hạt bay từ các góc
+      for(let i=0;i<60;i++) {
+        let randomX = rect.left + Math.random() * rect.width;
+        let randomY = rect.top + Math.random() * rect.height;
+        let p = new ConfettiParticle(randomX, randomY);
+        p.speedX = randomRange(-2,2);
+        p.speedY = randomRange(-3,-1);
+        p.gravity = 0.12;
+        particles.push(p);
+      }
+      animateConfetti();
+      // sau 3.5 giây tự động tắt nếu còn chạy (đề phòng)
+      setTimeout(() => {
+        if (active) {
+          if (animationId) cancelAnimationFrame(animationId);
+          active = false;
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+          particles = [];
+        }
+      }, 4000);
+    }
+
+    // Thêm hiệu ứng rơi hoa nhẹ khi tải trang (chào mừng)
+    function welcomeMiniConfetti() {
+      // hiệu ứng nhẹ lúc đầu, chỉ vài bông
+      const tempParticles = [];
+      for(let i=0;i<60;i++) {
+        let x = Math.random() * window.innerWidth;
+        let y = -Math.random() * 200;
+        let p = new ConfettiParticle(x, y);
+        p.speedX = randomRange(-1.5, 1.5);
+        p.speedY = randomRange(1, 3);
+        p.gravity = 0.1;
+        p.fade = 0.9;
+        p.decay = 0.008;
+        tempParticles.push(p);
+      }
+      let tempActive = true;
+      let tempId;
+      function tempAnimate() {
+        if (!tempActive) return;
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        let any = false;
+        for (let i=0;i<tempParticles.length;i++) {
+          const gone = tempParticles[i].update();
+          if (!gone) {
+            any = true;
+            tempParticles[i].draw(ctx);
+          } else {
+            tempParticles.splice(i,1);
+            i--;
+          }
+        }
+        if (any) {
+          tempId = requestAnimationFrame(tempAnimate);
+        } else {
+          cancelAnimationFrame(tempId);
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+          tempActive = false;
+        }
+      }
+      tempAnimate();
+      setTimeout(() => {
+        if (tempActive) {
+          cancelAnimationFrame(tempId);
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+          tempActive = false;
+        }
+      }, 2500);
+    }
+
+    // kích hoạt nút bấm
+    const btn = document.getElementById('popConfettiBtn');
+    if (btn) {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        startConfettiFromCard();
+        // thêm hiệu ứng rung nhẹ cho nút
+        btn.style.transform = 'scale(0.95)';
+        setTimeout(() => { btn.style.transform = ''; }, 150);
+      });
+    }
+
+    resizeCanvas();
+    welcomeMiniConfetti();
+
+    // nếu click vào thiệp cũng có thể bắn confetti nhẹ vui (tùy chọn)
+    const cardDiv = document.querySelector('.card');
+    if(cardDiv) {
+      cardDiv.addEventListener('dblclick', (e) => {
+        startConfettiFromCard();
+      });
+    }
+
+    // clean up trên window unload không cần thiết
+  })();
 </script>
 </body>
 </html>
